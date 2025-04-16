@@ -1,0 +1,96 @@
+:root {
+    --primary: #0073aa;
+    --text: #1e1e1e;
+    --bg: #ffffff;
+    --sidebar-bg: #f8f9fa;
+    --border: #e0e0e0;
+    --hover: #f0f0f0;
+    --radius: 10px;
+    --shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+body, .ppdb-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+.ppdb-header {
+    background-color: var(--bg);
+    color: var(--primary);
+    padding: 24px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.ppdb-body {
+    display: flex;
+    min-height: 500px;
+
+}
+
+/* Sidebar */
+.ppdb-sidebar {
+    width: 240px;
+    background-color: var(--sidebar-bg);
+    padding: 24px;
+    border-right: 1px solid var(--border);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.03);
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.ppdb-sidebar h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: var(--primary);
+}
+
+.ppdb-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ppdb-sidebar .button-link {
+    display: block;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+}
+
+.ppdb-sidebar .button-link:hover {
+    background-color: var(--hover);
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+/* Main content */
+.ppdb-main {
+    flex-grow: 1;
+    padding: 32px;
+    background-color: var(--sidebar-bg);
+}
+
+.ppdb-main h2 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.ppdb-main p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
